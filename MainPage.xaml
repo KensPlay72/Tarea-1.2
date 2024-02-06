@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_1._2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25">
+
+            <Entry x:Name="Nombre" Placeholder="Ingrese su Nombre" Keyboard="Text" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="Apellido" Placeholder="Ingrese sus Apellidos" Keyboard="Text" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="Edad" Placeholder="Ingrese su Edad" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="correo" Placeholder="Ingrese su correo" Keyboard="Email" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="direccion" Placeholder="Ingrese su Direccion" Keyboard="Text" HorizontalTextAlignment="Center"/>
+
+            <Button
+             x:Name="SaveBtn"
+             Text="Guardar" 
+             Clicked="Save_info"
+             HorizontalOptions="Fill" />
+
+            <Button
+             Text="Ver Listado"
+             Clicked="VerListado_Clicked"
+             HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
